@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-read -p "Enter Mount Point: " mountpoint
-read -p "Enter bs: " mountbs
+read -p "Enter Swap Mount Point: " mountpoint
+read -p "Enter bs (including M): " mountbs
 read -p "Enter count: " mountcount
 read -p "Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
 sudo dd if=/dev/zero of=$mountpoint bs=$mountbs count=$mountcount
