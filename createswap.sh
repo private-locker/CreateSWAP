@@ -8,5 +8,7 @@ sudo mkswap $mountpoint
 sudo chmod 0600 $mountpoint
 sudo swapon $mountpoint
 sudo echo -e "$mountpoint none swap sw 0 0 \n" >> /../etc/fstab
+echo -e "Cleaning Up..";
+rm -rf "$0";
 echo -e "Done!";
 exit;
